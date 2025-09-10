@@ -48,3 +48,29 @@ A Ruby on Rails API for managing notes with JWT-based authentication using Devis
 git clone https://github.com/<your-username>/notes_api.git
 cd notes_api
 ```
+2. Install dependencies 
+
+```bash
+bundle install
+```
+3. Set up the database:
+```bash
+Set up the database:
+```
+
+4. Run the server:
+```bash
+rails s
+```
+
+The api will be available at ```http://localhost:3000```
+
+### Testing
+Run the RSpec test suite with:
+```bash
+bundle exec rspec
+```
+
+### Notes
+- Make sure to include ```Authorization: Bearer <JWT_TOKEN>``` in headers for protected endpoints.
+- Extend the Notes controller to implement full CRUD functionality.
