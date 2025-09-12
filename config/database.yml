@@ -81,9 +81,10 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    database: notes_api_production
-    username: notes_api
-    password: <%= ENV["NOTES_API_DATABASE_PASSWORD"] %>
+    database: notes-api-prod
+    username: notes_api_prod_user
+    password: T6TTbmm2giiWe6nxZO0rEqeO08we0YEj
+    host: dpg-d31sgafdiees73884060-a
   cache:
     <<: *primary_production
     database: notes_api_production_cache
